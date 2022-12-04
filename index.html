@@ -98,15 +98,14 @@
         </div>
         <hr>
         <!-- Results Section -->
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-4">
         <section class="jumbotron text-center">
             <div class="container">
-                <h2 class="jumbotron-heading result-header">Cheapest Sulfur Raid</h2>
-                <p class="lead text-muted">Only lists C4 and explosive ammo due to satchels and rockets being higher cost.</p>
+                <h2 class="jumbotron-heading result-header">Cheapest Raid</h2>
+                <p class="lead text-muted">Most effective method of raiding in terms of cost of sulfur.</p>
                 <div class="row">
-                    <div class="col-12 results">
-                        <p>Satchel Charge</p>
-                        <p id="satchel">0</p>
-                    </div>
                     <div class="col-12 results">
                         <p>Explosive Ammo</p>
                         <p id="explo">0</p>
@@ -116,12 +115,51 @@
                         <p id="c4">0</p>
                     </div>
                     <div class="col-12 results">
-                        <p>Rocket</p>
-                        <p id="rocket">0</p>
+                        <p>Sulfur Cost</p>
+                        <p id="costOne">0</p>
                     </div>
                 </div>
             </div>
         </section>
+    </div>
+    <div class="col-4">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h2 class="jumbotron-heading result-header">Rocket Raid</h2>
+                <p class="lead text-muted">More expensive in terms of sulfur, but better splash damage.</p>
+                <div class="row">
+                    <div class="col-12 results">
+                        <p>Rockets</p>
+                        <p id="rocket">0</p>
+                    </div>
+                    <div class="col-12 results">
+                        <p>Sulfur Cost</p>
+                        <p id="costTwo">0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-4">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h2 class="jumbotron-heading result-header">Tier 2 Raid</h2>
+                <p class="lead text-muted">Raiding purely with satchel charges. No tier 3 blueprints available.</p>
+                <div class="row">
+                    <div class="col-12 results">
+                        <p>Satchel Charges</p>
+                        <p id="satchel">0</p>
+                    </div>
+                    <div class="col-12 results">
+                        <p>Sulfur Cost</p>
+                        <p id="costThree">0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    </div>
     </main>
     <script src="main.js"></script>
 </body>

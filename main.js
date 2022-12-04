@@ -35,6 +35,9 @@ document.getElementById("submit").onclick = function(){
   let explos = 0;
   let c4s = 0;
   let rockets = 0;
+  let costOne = 0;
+  let costTwo = 0;
+  let costThree = 0;
   explos += woodenWall * 49;
   c4s += stoneWall * 2;
   c4s += metalWall * 4;
@@ -43,7 +46,27 @@ document.getElementById("submit").onclick = function(){
   explos += sheetDoor * 63;
   explos += garageDoor * 150;
   explos += armoredDoor * 250;
+
+  rockets += woodenWall * 2;
+  rockets += stoneWall * 4;
+  rockets += metalWall * 8;
+  rockets += armoredWall * 15;
+  rockets += woodenDoor * 1;
+  rockets += sheetDoor * 2;
+  rockets += garageDoor * 3;
+  rockets += armoredDoor * 5;
+
+  satchels += woodenWall * 3;
+  satchels += stoneWall * 10;
+  satchels += metalWall * 23;
+  satchels += armoredWall * 46;
+  satchels += woodenDoor * 2;
+  satchels += sheetDoor * 4;
+  satchels += garageDoor * 9;
+  satchels += armoredDoor * 15;
+  
   satchel.innerHTML = satchels.toString();
   explo.innerHTML = explos.toString();
   c4.innerHTML = c4s.toString();
+  rocket.innerHTML = rockets.toString();
 }
