@@ -1,0 +1,9 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
