@@ -32,7 +32,11 @@
                 <p class="lead text-muted">
                     This application is a simple way to estimate the
                     amount of explosives needed to raid a base size that
-                    you input.
+                    you input for the lowest cost of sulfur. Note: With any wooden
+                    object, it is better to use either a flamethrower or molotovs,
+                    and while rockets are generally more expensive per sulfur, they 
+                    are capable of splash damage, so use rockets when you want widespread
+                    damage i.e splash four floors instead of one.
                 </p>
             </div>
         </section>
@@ -42,19 +46,23 @@
             <div class="row">
                 <div class="col-12 list">
                     <p>Wooden Wall</p>
-                    <p>input here</p>
+                    <input type="number" id="woodenwall" name="woodenwall"
+       min="0" max="100">
                 </div>
                 <div class="col-12 list">
                     <p>Stone Wall</p>
-                    <p>input here</p>
+                    <input type="number" id="stonewall" name="stonewall"
+                    min="0" max="100">
                 </div>
                 <div class="col-12 list">
                     <p>Metal Wall</p>
-                    <p>input here</p>
+                    <input type="number" id="metalwall" name="metalwall"
+                    min="0" max="100">
                 </div>
                 <div class="col-12 list">
                     <p>Armored Wall</p>
-                    <p>input here</p>
+                    <input type="number" id="armoredwall" name="armoredwall"
+                    min="0" max="100">
                 </div>
             </div>
         </div>
@@ -106,5 +114,6 @@
             </div>
         </section>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
