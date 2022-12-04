@@ -7,3 +7,12 @@
     display: flex;
     justify-content: space-between;
 }
+
+.results {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-header {
+    text-decoration: underline;
+}
