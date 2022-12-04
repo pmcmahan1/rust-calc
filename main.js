@@ -14,6 +14,13 @@ function enforceMinMax(el) {
 let btnClear = document.getElementById('reset');
 let inputs = document.querySelectorAll('input');
 btnClear.addEventListener('click', () => {
+  satchel.innerHTML = "0";
+  explo.innerHTML = "0";
+  c4.innerHTML = "0";
+  rocket.innerHTML = "0";
+  costOne.innerHTML = "0";
+  costTwo.innerHTML = "0";
+  costThree.innerHTML = "0";
   inputs.forEach(input => input.value = '');
 });
 
@@ -31,13 +38,16 @@ document.getElementById("submit").onclick = function(){
   let explo = document.querySelector("#explo");
   let c4 = document.querySelector("#c4");
   let rocket = document.querySelector("#rocket");
+  let costOne = document.querySelector("#costOne");
+  let costTwo = document.querySelector("#costTwo");
+  let costThree = document.querySelector("#costThree");
   let satchels = 0;
   let explos = 0;
   let c4s = 0;
   let rockets = 0;
-  let costOne = 0;
-  let costTwo = 0;
-  let costThree = 0;
+  let sulfurOne = 0;
+  let sulfurTwo = 0;
+  let sulfurThree = 0;
   explos += woodenWall * 49;
   c4s += stoneWall * 2;
   c4s += metalWall * 4;
@@ -64,9 +74,17 @@ document.getElementById("submit").onclick = function(){
   satchels += sheetDoor * 4;
   satchels += garageDoor * 9;
   satchels += armoredDoor * 15;
-  
+
+  sulfurOne += c4s * 2200;
+  sulfurOne += explos * 25;
+  sulfurTwo += rockets * 1400;
+  sulfurThree += satchels * 480;
+
   satchel.innerHTML = satchels.toString();
   explo.innerHTML = explos.toString();
   c4.innerHTML = c4s.toString();
   rocket.innerHTML = rockets.toString();
+  costOne.innerHTML = sulfurOne.toString();
+  costTwo.innerHTML = sulfurTwo.toString();
+  costThree.innerHTML = sulfurThree.toString();
 }
