@@ -16,3 +16,8 @@
 .result-header {
     text-decoration: underline;
 }
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
