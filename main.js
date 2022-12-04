@@ -10,6 +10,13 @@ function enforceMinMax(el) {
   }
 }
 
+//Enables the clear button
+let btnClear = document.getElementById('reset');
+let inputs = document.querySelectorAll('input');
+btnClear.addEventListener('click', () => {
+  inputs.forEach(input => input.value = '');
+});
+
 //Giant function which does all the calculations
 document.getElementById("submit").onclick = function(){
   let woodenWall = document.getElementById("woodenwall").value;
@@ -28,7 +35,6 @@ document.getElementById("submit").onclick = function(){
   let explos = 0;
   let c4s = 0;
   let rockets = 0;
-
   explos += woodenWall * 49;
   c4s += stoneWall * 2;
   c4s += metalWall * 4;

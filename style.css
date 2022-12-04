@@ -20,5 +20,5 @@
 .button {
     padding-top: 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
